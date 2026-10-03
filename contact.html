@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiệm Ăn Vặt Cay Cay - Liên Hệ & Đặt Hàng</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 1. THANH ĐIỀU HƯỚNG CHUNG (HEADER & NAVBAR) -->
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">🌶️ CAY CAY <span>QUÁN</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Trang Chủ</a></li>
+        <li><a href="about.html">Giới Thiệu</a></li>
+        <li><a href="products.html">Thực Đơn</a></li>
+        <li><a href="services.html">Dịch Vụ</a></li>
+        <li><a href="gallery.html">Hình Ảnh</a></li>
+        <li><a href="blog.html">Cẩm Nang</a></li>
+        <li><a href="details.html">Chi Tiết Món</a></li>
+        <li><a href="contact.html" class="active">Liên Hệ</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- BANNER -->
+  <section class="hero" style="padding: 60px 20px;">
+    <div class="container">
+      <h1>LIÊN HỆ & ĐẶT HÀNG TRỰC TUYẾN</h1>
+      <p>Đặt ship giao hàng siêu tốc 30 phút hoặc liên hệ tư vấn đặt tiệc liên hoan, lấy sỉ đồ ăn vặt nội địa.</p>
+    </div>
+  </section>
+
+  <!-- FORM LIÊN HỆ & ĐẶT SHIP -->
+  <main class="section">
+    <div class="container">
+      <div class="contact-wrapper">
+        
+        <!-- Cột trái: Thông tin tiệm -->
+        <div class="contact-info">
+          <h3>Thông Tin Cay Cay Quán</h3>
+          
+          <div class="info-line">
+            <strong>📍 Địa chỉ tiệm:</strong>
+            <p>Số 123 Đường Cầu Giấy, Phường Quan Hoa, Quận Cầu Giấy, Hà Nội</p>
+          </div>
+
+          <div class="info-line">
+            <strong>📞 Hotline đặt ship hỏa tốc:</strong>
+            <p>0123 456 789 / 0988 776 655 (Hỗ trợ Zalo 24/7)</p>
+          </div>
+
+          <div class="info-line">
+            <strong>⏰ Thời gian mở cửa:</strong>
+            <p>08:00 - 22:30 hàng ngày (Phục vụ xuyên trưa và tối cả ngày lễ)</p>
+          </div>
+
+          <div class="info-line">
+            <strong>✉️ Email hợp tác & lấy sỉ:</strong>
+            <p>caycayquan.anvat@gmail.com</p>
+          </div>
+
+          <div class="info-line">
+            <strong>🛵 Chính sách giao hàng:</strong>
+            <p>• Freeship cho đơn từ 150.000đ trong bán kính 5km.<br>
+               • Giao hàng trong 30-45 phút bằng túi giữ nhiệt chống tràn.<br>
+               • Hỗ trợ thanh toán tiền mặt (COD) hoặc quét mã QR chuyển khoản.</p>
+          </div>
+        </div>
+
+        <!-- Cột phải: Form đặt món -->
+        <div class="contact-form">
+          <h3>Gửi Đơn Đặt Hàng Nhanh</h3>
+          <form action="#" method="get" onsubmit="alert('Cảm ơn bạn! Tiệm Cay Cay Quán đã tiếp nhận đơn hàng và sẽ liên hệ xác nhận trong 2 phút!'); return false;">
+            <div class="form-group">
+              <label for="fullname">Họ và tên của bạn: *</label>
+              <input type="text" id="fullname" name="fullname" placeholder="Ví dụ: Nguyễn Văn A" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Số điện thoại nhận hàng: *</label>
+              <input type="tel" id="phone" name="phone" placeholder="Ví dụ: 0912 345 678" required>
+            </div>
+
+            <div class="form-group">
+              <label for="address">Địa chỉ giao hàng chi tiết: *</label>
+              <input type="text" id="address" name="address" placeholder="Số nhà, tên đường, ngõ, phường, quận" required>
+            </div>
+
+            <div class="form-group">
+              <label for="order-dish">Chọn món bạn muốn đặt: *</label>
+              <select id="order-dish" name="order-dish" required>
+                <option value="">-- Vui lòng chọn món --</option>
+                <option value="mienchua">Miến Chua Cay Trùng Khánh (35.000đ)</option>
+                <option value="bunoc">Bún Ốc Liễu Châu Luosifen (42.000đ)</option>
+                <option value="changa">Chân Gà Cay Rút Xương (38.000đ)</option>
+                <option value="dauhu">Đậu Hũ Sốt Cay Tứ Xuyên (25.000đ)</option>
+                <option value="covit">Cổ Vịt Cay Vũ Hán (35.000đ)</option>
+                <option value="quecay">Que Cay Tứ Xuyên Vệ Long (15.000đ)</option>
+                <option value="combo-tk">Combo Trùng Khánh Cay Tê (85.000đ)</option>
+                <option value="combo-spicy">Combo Thử Thách Cực Cay (119.000đ)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="spicy-level">Mức độ cay mong muốn:</label>
+              <select id="spicy-level" name="spicy-level">
+                <option value="1">Cay nhẹ</option>
+                <option value="2" selected>Cay vừa (Khuyên dùng)</option>
+                <option value="3">Cay tê Tứ Xuyên</option>
+                <option value="4">Siêu cay xé lưỡi</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="note">Ghi chú thêm (khung giờ giao, gia vị thêm...):</label>
+              <textarea id="note" name="note" rows="3" placeholder="Ví dụ: Cho xin thêm đũa và thìa, giao lúc 11h30 trưa nay..."></textarea>
+            </div>
+
+            <button type="submit" class="btn" style="width: 100%;">🚀 Gửi Đơn Đặt Mua Ngay</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- CHÂN TRANG CHUNG (FOOTER) -->
+  <footer>
+    <div class="container">
+      <p><strong>🌶️ TIỆM ĂN VẶT CAY CAY - ĐỒ ĂN VẶT NỘI ĐỊA TRUNG QUỐC</strong></p>
+      <div class="footer-nav">
+        <a href="index.html">Trang Chủ</a> |
+        <a href="about.html">Giới Thiệu</a> |
+        <a href="products.html">Thực Đơn</a> |
+        <a href="services.html">Dịch Vụ</a> |
+        <a href="gallery.html">Hình Ảnh</a> |
+        <a href="blog.html">Cẩm Nang</a> |
+        <a href="details.html">Chi Tiết Món</a> |
+        <a href="contact.html">Liên Hệ</a>
+      </div>
+      <p>Địa chỉ: 123 Đường Cầu Giấy, Hà Nội | Hotline: 0123 456 789 | Giờ mở cửa: 08:00 - 22:30</p>
+      <p class="footer-credit">
+        Hình ảnh minh họa chất lượng cao cung cấp bởi <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>. &copy; 2026 Cay Cay Quán. Sinh viên: Quan Khoa Cát Tường (MSSV: 2531540215).
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

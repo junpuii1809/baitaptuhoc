@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiệm Ăn Vặt Cay Cay - Chi Tiết Sản Phẩm</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 1. THANH ĐIỀU HƯỚNG CHUNG (HEADER & NAVBAR) -->
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">🌶️ CAY CAY <span>QUÁN</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Trang Chủ</a></li>
+        <li><a href="about.html">Giới Thiệu</a></li>
+        <li><a href="products.html">Thực Đơn</a></li>
+        <li><a href="services.html">Dịch Vụ</a></li>
+        <li><a href="gallery.html">Hình Ảnh</a></li>
+        <li><a href="blog.html">Cẩm Nang</a></li>
+        <li><a href="details.html" class="active">Chi Tiết Món</a></li>
+        <li><a href="contact.html">Liên Hệ</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- BANNER -->
+  <section class="hero" style="padding: 50px 20px;">
+    <div class="container">
+      <h1>CHI TIẾT MÓN ĂN ĐẶC SẮC</h1>
+      <p>Thông tin toàn diện về thành phần, định lượng dinh dưỡng, xuất xứ và cách chế biến chuẩn vị.</p>
+    </div>
+  </section>
+
+  <!-- KHỐI CHI TIẾT SẢN PHẨM -->
+  <main class="section">
+    <div class="container">
+      
+      <div class="product-detail-wrapper">
+        <!-- Cột trái: Ảnh sản phẩm -->
+        <div class="product-detail-img">
+          <img src="images/bunoc.jpg" alt="Bún Ốc Liễu Châu Đặc Biệt">
+          <div style="display: flex; gap: 10px; margin-top: 12px;">
+            <img src="images/bunoc.jpg" alt="Góc chụp 1" style="width: 75px; height: 60px; object-fit: cover; border-radius: 5px; border: 2px solid #d63031; cursor: pointer;">
+            <img src="images/ingredients.jpg" alt="Gói nguyên liệu" style="width: 75px; height: 60px; object-fit: cover; border-radius: 5px; border: 1px solid #ddd; cursor: pointer;">
+            <img src="images/mienchua.jpg" alt="Miến chua cay" style="width: 75px; height: 60px; object-fit: cover; border-radius: 5px; border: 1px solid #ddd; cursor: pointer;">
+          </div>
+        </div>
+
+        <!-- Cột phải: Thông tin món -->
+        <div class="product-detail-info">
+          <span class="product-badge">🔥 Món Bán Chạy Nhất #1</span>
+          <h1>Bún Ốc Liễu Châu Đặc Biệt (Luosifen Hoàng Gia)</h1>
+          
+          <div class="product-detail-price">
+            42.000đ <del>50.000đ</del> <span style="font-size: 13px; color: #27ae60; font-weight: bold;">(Tiết kiệm 16%)</span>
+          </div>
+
+          <p style="color: #636e72; margin-bottom: 15px; font-size: 14px;">
+            Bát bún ốc nóng hổi thơm nồng nàn với nước dùng hầm ốc đậm đà, măng chua ngâm giòn rụm đặc sản Liễu Châu, váng đậu chiên phồng xốp giòn tan và dầu ớt đỏ au cay tê bùng nổ vị giác.
+          </p>
+
+          <ul class="product-meta-list">
+            <li><strong>Mã sản phẩm:</strong> LZ-BO-01</li>
+            <li><strong>Thương hiệu:</strong> Xưởng truyền thống Liễu Châu (Quảng Tây)</li>
+            <li><strong>Quy cách đóng gói:</strong> Gói lớn 335g (gồm 8 gói gia vị rời bên trong)</li>
+            <li><strong>Tình trạng hàng:</strong> <span style="color: #27ae60; font-weight: bold;">Còn hàng (Date mới tháng này)</span></li>
+          </ul>
+
+          <!-- Tùy chọn đặt hàng -->
+          <div class="product-custom-options">
+            <div class="option-group">
+              <label for="spicy-select">🌶️ Chọn mức độ cay mong muốn:</label>
+              <select id="spicy-select">
+                <option value="1">Cấp độ 1: Cay nhẹ dịu (phù hợp người mới ăn)</option>
+                <option value="2" selected>Cấp độ 2: Cay vừa chuẩn vị Liễu Châu (Khuyên dùng)</option>
+                <option value="3">Cấp độ 3: Cay tê hoa tiêu đậm đà</option>
+                <option value="4">Cấp độ 4: Siêu cay xé lưỡi (Cho dân sành cay)</option>
+              </select>
+            </div>
+
+            <div class="option-group" style="margin-top: 10px;">
+              <label for="topping-select">🥢 Thêm Topping ăn kèm:</label>
+              <select id="topping-select">
+                <option value="none">Không thêm topping</option>
+                <option value="vang-dau">+ Thêm Váng Đậu Chiên Giòn (+5.000đ)</option>
+                <option value="mang-chua">+ Thêm Măng Chua Muối Giòn (+5.000đ)</option>
+                <option value="trung-ngam">+ 1 Quả Trứng Ngâm Tương Lòng Đào (+8.000đ)</option>
+                <option value="full-topping">+ Combo Full Topping (+15.000đ)</option>
+              </select>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+            <div style="display: flex; align-items: center; border: 1px solid #ccc; border-radius: 20px; overflow: hidden;">
+              <button style="padding: 8px 14px; border: none; background: #eee; cursor: pointer; font-weight: bold;">-</button>
+              <span style="padding: 0 15px; font-weight: bold;">1</span>
+              <button style="padding: 8px 14px; border: none; background: #eee; cursor: pointer; font-weight: bold;">+</button>
+            </div>
+            <a href="contact.html" class="btn">🛒 Đặt Mua Ngay</a>
+            <a href="contact.html" class="btn btn-secondary">Gọi Hotline Ship: 0123.456.789</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- BẢNG THÔNG SỐ VÀ HƯỚNG DẪN NẤU TẠI NHÀ -->
+      <div style="background: #ffffff; padding: 25px; border-radius: 10px; border: 1px solid #ffeaa7; margin-bottom: 35px;">
+        <h3 style="color: #d63031; margin-bottom: 15px;">Bảng Chi Tiết Thành Phần & Quy Cách</h3>
+        
+        <table class="detail-specs-table">
+          <tr>
+            <th>Trọng lượng tịnh</th>
+            <td>335g / gói (Khẩu phần ăn 1 người no nê)</td>
+          </tr>
+          <tr>
+            <th>Các gói gia vị đi kèm</th>
+            <td>Gói bún gạo khô, gói nước cốt súp hầm ốc, gói măng chua giòn, gói váng đậu chiên, gói lạc rang bùi, gói dưa chua đậu đỗ, gói dầu ớt cay tê, gói giấm ủ chua thanh.</td>
+          </tr>
+          <tr>
+            <th>Hạn sử dụng (HSD)</th>
+            <td>09 tháng kể từ ngày sản xuất in trên bao bì.</td>
+          </tr>
+          <tr>
+            <th>Điều kiện bảo quản</th>
+            <td>Để nơi khô ráo, thoáng mát, tránh ánh nắng mặt trời chiếu trực tiếp.</td>
+          </tr>
+          <tr>
+            <th>Cách nấu chuẩn vị (10P)</th>
+            <td>
+              <strong>Bước 1:</strong> Luộc bún trong nước sôi khoảng 8-10 phút cho sợi bún mềm dẻo, sau đó vớt ra xả qua nước lạnh.<br>
+              <strong>Bước 2:</strong> Đun sôi 450ml nước mới, cho gói nước súp hầm ốc và sợi bún vào đun sôi tiếp 2 phút.<br>
+              <strong>Bước 3:</strong> Tắt bếp, đổ ra bát rồi cho măng chua, váng đậu, lạc rang và nêm lượng dầu ớt cùng gói giấm chua theo sở thích rồi thưởng thức nóng.
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- GỢI Ý MÓN ĂN KÈM -->
+      <div class="section-title" style="text-align: left; margin-bottom: 20px;">
+        <h2>Món Ăn Kèm Hoàn Hảo Cho Bún Ốc</h2>
+      </div>
+
+      <div class="dish-grid">
+        <article class="dish-card">
+          <div class="dish-card-img-wrap">
+            <img src="images/changa.jpg" alt="Chân gà rút xương">
+            <span class="dish-badge-overlay">Giòn Sần Sật</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-header">
+              <h3 class="dish-name">Chân Gà Cay Rút Xương</h3>
+              <span class="dish-price">38.000đ</span>
+            </div>
+            <p class="dish-desc">Giòn sần sật ngâm sốt chua cay, ăn kèm cùng bún ốc cực kỳ đưa miệng.</p>
+            <a href="details.html" class="btn btn-sm">Xem Món Này</a>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <div class="dish-card-img-wrap">
+            <img src="images/drink.jpg" alt="Trà chanh giã tay">
+            <span class="dish-badge-overlay">Thanh Nhiệt</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-header">
+              <h3 class="dish-name">Trà Chanh Giã Tay</h3>
+              <span class="dish-price">20.000đ</span>
+            </div>
+            <p class="dish-desc">Chua ngọt thơm lừng mát rượi, giúp giải cay tức thì khi ăn bún ốc cấp độ cao.</p>
+            <a href="details.html" class="btn btn-sm">Xem Món Này</a>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <div class="dish-card-img-wrap">
+            <img src="images/dauhu.jpg" alt="Đậu hũ sốt cay Tứ Xuyên">
+            <span class="dish-badge-overlay">Món Mới</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-header">
+              <h3 class="dish-name">Đậu Hũ Sốt Cay Tứ Xuyên</h3>
+              <span class="dish-price">25.000đ</span>
+            </div>
+            <p class="dish-desc">Béo mềm béo ngậy đẫm sốt ớt hoa tiêu cay tê kích thích vị giác.</p>
+            <a href="details.html" class="btn btn-sm">Xem Món Này</a>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- CHÂN TRANG CHUNG (FOOTER) -->
+  <footer>
+    <div class="container">
+      <p><strong>🌶️ TIỆM ĂN VẶT CAY CAY - ĐỒ ĂN VẶT NỘI ĐỊA TRUNG QUỐC</strong></p>
+      <div class="footer-nav">
+        <a href="index.html">Trang Chủ</a> |
+        <a href="about.html">Giới Thiệu</a> |
+        <a href="products.html">Thực Đơn</a> |
+        <a href="services.html">Dịch Vụ</a> |
+        <a href="gallery.html">Hình Ảnh</a> |
+        <a href="blog.html">Cẩm Nang</a> |
+        <a href="details.html">Chi Tiết Món</a> |
+        <a href="contact.html">Liên Hệ</a>
+      </div>
+      <p>Địa chỉ: 123 Đường Cầu Giấy, Hà Nội | Hotline: 0123 456 789 | Giờ mở cửa: 08:00 - 22:30</p>
+      <p class="footer-credit">
+        Hình ảnh minh họa chất lượng cao cung cấp bởi <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>. &copy; 2026 Cay Cay Quán. Sinh viên: Quan Khoa Cát Tường (MSSV: 2531540215).
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

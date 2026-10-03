@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiệm Ăn Vặt Cay Cay - Trang Chủ</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 1. THANH ĐIỀU HƯỚNG GLASSMORPHISM (HEADER & NAVBAR) -->
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">🌶️ CAY CAY <span>QUÁN</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Trang Chủ</a></li>
+        <li><a href="about.html">Giới Thiệu</a></li>
+        <li><a href="products.html">Thực Đơn</a></li>
+        <li><a href="services.html">Dịch Vụ</a></li>
+        <li><a href="gallery.html">Hình Ảnh</a></li>
+        <li><a href="blog.html">Cẩm Nang</a></li>
+        <li><a href="details.html">Chi Tiết Món</a></li>
+        <li><a href="contact.html">Liên Hệ</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- 2. BANNER HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1>TIỆM ĐỒ ĂN VẶT CAY CHUA TRUNG QUỐC</h1>
+      <p>Thiên đường ăn vặt chuẩn vị Tứ Xuyên - Trùng Khánh: Miến chua cay, Bún ốc Liễu Châu, Chân gà rút xương date mới 100% thơm nồng cay tê!</p>
+      <div class="hero-btns">
+        <a href="products.html" class="btn">🔥 Khám Phá Thực Đơn (20+ Món)</a>
+        <a href="contact.html" class="btn btn-outline">🚀 Đặt Giao Tận Nơi 30P</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. TOP MÓN BÁN CHẠY (GRID & CARDS) -->
+  <main class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Top Món Cay Hot Bán Chạy Nhất</h2>
+        <p>Những món ăn vặt chuẩn vị nội địa được các tín đồ sành ăn yêu thích và đặt hàng nhiều nhất tuần qua.</p>
+      </div>
+
+      <!-- BỘ LỌC NHANH TRANG CHỦ -->
+      <div style="text-align: center;">
+        <div class="filter-pills-wrapper">
+          <button type="button" class="filter-pill active" onclick="switchCategory('all', this)">✨ Tất Cả Top Món</button>
+          <button type="button" class="filter-pill" onclick="switchCategory('mon-nuoc', this)">🍜 Món Nước</button>
+          <button type="button" class="filter-pill" onclick="switchCategory('an-vat-cay', this)">🍗 Ăn Vặt Cay Tê</button>
+          <button type="button" class="filter-pill" onclick="switchCategory('do-uong', this)">🧋 Đồ Uống</button>
+        </div>
+      </div>
+
+      <div class="dish-grid" id="dish-container">
+        <article class="dish-card" data-category="mon-nuoc" style="animation-delay: 0.00s;">
+          <div class="dish-card-img-wrap">
+            <img src="images/mienchua.jpg" alt="Miến Chua Cay Trùng Khánh">
+            <span class="dish-badge-overlay">Bán Chạy Nhất</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-header">
+              <h3 class="dish-name">Miến Chua Cay Trùng Khánh</h3>
+              <span class="dish-price">35.000đ</span>
+            </div>
+            <p class="dish-desc">Sợi miến khoai lang dẻo dai ngập trong nước sốt giấm đen ủ chua thanh, ớt chưng sa tế tê cay và đậu phộng giòn rụm.</p>
+            <div class="dish-footer">
+              <span class="spicy-tag">🌶️ Cay Tê Chuẩn Vị</span>
+              <a href="details.html" class="btn btn-sm">Xem Chi Tiết</a>
+            </div>
+          </div>
+        </article>
+        <article class="dish-card" data-category="mon-nuoc" style="animation-delay: 0.03s;">
+          <div class="dish-card-img-wrap">
+            <img src="images/bunoc.jpg" alt="Bún Ốc Liễu Châu (Luosifen)">
+            <span class="dish-badge-overlay">Đặc Sản Cực Hot</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-header">
+              <h3 class="dish-name">Bún Ốc Liễu Châu (Luosifen)</h3>
+              <span class="dish-price">42.000đ</span>
+            </div>
+            <p class="dish-desc">Nước dùng hầm ốc đậm đà nồng nàn đặc trưng, ăn kèm măng chua ngâm giòn, váng đậu chiên phồng và dầu ớt đỏ au.</p>
+            <div class="dish-footer">
+              <span class="spicy-tag">🌶️🌶️ Siêu Cay Nồng</span>
+              <a href="details.html" class="btn btn-sm">Xem Chi Tiết</a>
+            </div>
+          </div>
+        </article>
+        <article class="dish-card" data-category="mon-nuoc" style="animation-delay: 0.06s;">
+          <div class="dish-card-img-wrap">
+            <img src="images/hero.jpg" alt="Lẩu Tự Sôi Bò Cay Tê Haidilao">
+            <span class="dish-badge-overlay">Hot Trend</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-header">
+              <h3 class="dish-name">Lẩu Tự Sôi Bò Cay Tê Haidilao</h3>
+              <span class="dish-price">115.000đ</span>
+            </div>
+            <p class="dish-desc">Hộp lẩu tự sôi đầy ắp thịt bò, viên bò thả lẩu, củ sen, miến dẹt cùng gói sốt cốt lẩu Haidilao tự chín sau 15 phút.</p>
+            <div class="dish-footer">
+              <span class="spicy-tag">🌶️🌶️ Cay Hoa Tiêu</span>
+              <a href="details.html" class="btn btn-sm">Xem Chi Tiết</a>
+            </div>
+          </div>
+        </article>
+        <article class="dish-card" data-category="mon-nuoc" style="animation-delay: 0.09s;">
+          <div class="dish-card-img-wrap">
+            <img src="images/ingredients.jpg" alt="Mì Trộn Cay Nam Xương">
+            <span class="dish-badge-overlay">Món Mới</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-header">
+              <h3 class="dish-name">Mì Trộn Cay Nam Xương</h3>
+              <span class="dish-price">38.000đ</span>
+            </div>
+            <p class="dish-desc">Sợi mì tươi trộn sốt cay thơm nồng vị dầu hào, hành lá phi thơm, củ cải muối giòn rụm và lạc rang bùi ngậy.</p>
+            <div class="dish-footer">
+              <span class="spicy-tag">🌶️ Cay Đậm Vị</span>
+              <a href="details.html" class="btn btn-sm">Xem Chi Tiết</a>
+            </div>
+          </div>
+        </article>
+        <article class="dish-card" data-category="mon-nuoc" style="animation-delay: 0.12s;">
+          <div class="dish-card-img-wrap">
+            <img src="images/buncha.jpg" alt="Bún Chua Cay Quý Châu">
+            <span class="dish-badge-overlay">Chua Cay Dịu</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-header">
+              <h3 class="dish-name">Bún Chua Cay Quý Châu</h3>
+              <span class="dish-price">36.000đ</span>
+            </div>
+            <p class="dish-desc">Nước súp cà chua lên men chua thanh dìu dịu kết hợp ớt ngâm chua cay, thịt băm và nấm kim châm mềm ngọt.</p>
+            <div class="dish-footer">
+              <span class="spicy-tag">🌶️ Chua Thanh Cay Nhẹ</span>
+              <a href="details.html" class="btn btn-sm">Xem Chi Tiết</a>
+            </div>
+          </div>
+        </article>
+        <article class="dish-card" data-category="mon-nuoc" style="animation-delay: 0.15s;">
+          <div class="dish-card-img-wrap">
+            <img src="images/goicuon.jpg" alt="Miến Dẹt Khoai Lang Sa Tế">
+            <span class="dish-badge-overlay">Dẻo Dai</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-header">
+              <h3 class="dish-name">Miến Dẹt Khoai Lang Sa Tế</h3>
+              <span class="dish-price">32.000đ</span>
+            </div>
+            <p class="dish-desc">Sợi miến bản to bản dẹt siêu dai bám đẫm sốt ớt sa tế Tứ Xuyên, mè rang thơm phức ăn cực kỳ cuốn hút.</p>
+            <div class="dish-footer">
+              <span class="spicy-tag">🌶️ Cay Tê Sa Tế</span>
+              <a href="details.html" class="btn btn-sm">Xem Chi Tiết</a>
+            </div>
+          </div>
+        </article>
+        <article class="dish-card" data-category="an-vat-cay" style="animation-delay: 0.18s;">
+          <div class="dish-card-img-wrap">
+            <img src="images/changa.jpg" alt="Chân Gà Cay Rút Xương">
+            <span class="dish-badge-overlay">Gây Nghiện</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-header">
+              <h3 class="dish-name">Chân Gà Cay Rút Xương</h3>
+              <span class="dish-price">38.000đ</span>
+            </div>
+            <p class="dish-desc">Chân gà rút xương ngâm sốt chua cay ớt xiêm xanh đậm vị, gân giòn sần sật đã miệng, ăn lai rai không lối thoát.</p>
+            <div class="dish-footer">
+              <span class="spicy-tag">🌶️ Giòn Sần Sật</span>
+              <a href="details.html" class="btn btn-sm">Xem Chi Tiết</a>
+            </div>
+          </div>
+        </article>
+        <article class="dish-card" data-category="an-vat-cay" style="animation-delay: 0.21s;">
+          <div class="dish-card-img-wrap">
+            <img src="images/dauhu.jpg" alt="Đậu Hũ Sốt Cay Tứ Xuyên">
+            <span class="dish-badge-overlay">Món Mới</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-header">
+              <h3 class="dish-name">Đậu Hũ Sốt Cay Tứ Xuyên</h3>
+              <span class="dish-price">25.000đ</span>
+            </div>
+            <p class="dish-desc">Đậu hũ chiên vàng ươm bên ngoài, ngậy béo mềm mịn bên trong, đẫm sốt ớt hoa tiêu cay tê chua ngọt chuẩn vị.</p>
+            <div class="dish-footer">
+              <span class="spicy-tag">🌶️ Cay Hoa Tiêu</span>
+              <a href="details.html" class="btn btn-sm">Xem Chi Tiết</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="products.html" class="btn btn-secondary">Xem Toàn Bộ 20+ Món Ăn Vặt ➔</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- JAVASCRIPT CHUYỂN MỤC HOẠT ẢNH TRÊN TRANG CHỦ -->
+  <script>
+    function switchCategory(cat, btn) {
+      document.querySelectorAll('.filter-pill').forEach(el => el.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+
+      const cards = document.querySelectorAll('.dish-card');
+      let visibleIndex = 0;
+      cards.forEach(card => {
+        const itemCat = card.getAttribute('data-category');
+        if (cat === 'all' || itemCat === cat) {
+          card.style.display = 'flex';
+          card.style.animation = 'none';
+          void card.offsetWidth;
+          card.style.animation = `cardAppear 0.4s cubic-bezier(0.16, 1, 0.3, 1) ${visibleIndex * 0.04}s forwards`;
+          visibleIndex++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+
+  <!-- 4. LÝ DO CHỌN CAY CAY QUÁN (FEATURES) -->
+  <section class="section section-bg">
+    <div class="container">
+      <div class="section-title">
+        <h2>Vì Sao Bạn Sẽ Mê Cay Cay Quán?</h2>
+        <p>Chúng tôi mang trọn vẹn tinh hoa ẩm thực đường phố Trung Hoa đến tận bàn ăn của bạn với tiêu chuẩn chất lượng cao nhất.</p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-item">
+          <div class="feature-icon">🍜</div>
+          <h3>Chuẩn Vị Nội Địa</h3>
+          <p>Công thức nêm nếm và nguyên liệu chính gốc nhập khẩu từ Tứ Xuyên, Trùng Khánh, Liễu Châu.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">✨</div>
+          <h3>Date Mới 100%</h3>
+          <p>Hàng về liên tục theo tuần, hạn sử dụng dài hạn, đóng gói hút chân không an toàn vệ sinh thực phẩm.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">⚡</div>
+          <h3>Ship Hỏa Tốc 30P</h3>
+          <p>Giao hàng tận tay siêu nhanh trong nội thành, món nước và gia vị tách riêng đảm bảo độ giòn ngon.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🎁</div>
+          <h3>Ưu Đãi Hấp Dẫn</h3>
+          <p>Tặng kèm nước giải cay cho đơn hàng từ 100k, tích lũy điểm thưởng đổi voucher giảm giá mỗi ngày.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. DỊCH VỤ NỔI BẬT (PREVIEW SERVICES) -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Dịch Vụ Nổi Bật Của Tiệm</h2>
+        <p>Không chỉ bán lẻ món ăn ngon, chúng tôi còn phục vụ đa dạng nhu cầu tiệc tùng và hợp tác kinh doanh.</p>
+      </div>
+
+      <div class="service-grid">
+        <div class="service-card">
+          <div class="service-icon">🛵</div>
+          <h3>Giao Hàng Tận Nơi Siêu Tốc</h3>
+          <p>Dịch vụ ship đồ ăn vặt nhanh chóng, giữ trọn độ nóng sốt hoặc mát lạnh của món ăn.</p>
+          <a href="services.html" class="btn btn-sm">Xem Chi Tiết</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🎉</div>
+          <h3>Setup Tiệc Sinh Nhật & Lớp</h3>
+          <p>Setup trọn gói các set ăn vặt phong phú, bắt mắt cho các buổi liên hoan lớp, tiệc công ty.</p>
+          <a href="services.html" class="btn btn-sm">Xem Chi Tiết</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📦</div>
+          <h3>Phân Phối Sỉ & Lẻ Toàn Quốc</h3>
+          <p>Cung cấp nguồn sỉ đồ ăn vặt đóng gói nội địa giá cạnh tranh nhất cho các bạn cộng tác viên.</p>
+          <a href="services.html" class="btn btn-sm">Xem Chi Tiết</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. CẨM NANG ĂN VẶT (PREVIEW BLOG) -->
+  <section class="section section-bg">
+    <div class="container">
+      <div class="section-title">
+        <h2>Cẩm Nang & Bài Viết Mới</h2>
+        <p>Khám phá văn hóa ẩm thực Trung Hoa và những mẹo thưởng thức đồ cay ngon tuyệt đỉnh.</p>
+      </div>
+
+      <div class="blog-grid">
+        <article class="blog-card">
+          <div class="blog-card-img">
+            <img src="images/bunoc.jpg" alt="Giải mã bún ốc Liễu Châu">
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta"><span>Ẩm Thực</span> • 02/10/2026 • 5 phút đọc</div>
+            <h3>Giải Mã Bún Ốc Liễu Châu (Luosifen): Vì Sao Càng Nồng Lại Càng Nghiện?</h3>
+            <p>Khám phá nguồn gốc đặc biệt của món bún ốc nổi tiếng xứ Quảng Tây và bí quyết tạo nên hương vị măng chua độc nhất vô nhị.</p>
+            <a href="blog.html" class="btn btn-sm">Đọc Bài Viết ➔</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-img">
+            <img src="images/drink.jpg" alt="Mẹo giải cay">
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta"><span>Mẹo Vặt</span> • 28/09/2026 • 4 phút đọc</div>
+            <h3>Bí Kíp Ăn Đồ Cay Thả Ga Không Lo Nóng Trong Người</h3>
+            <p>Tuyệt chiêu làm dịu cảm giác bỏng rát ngay tức khắc bằng trà sữa, trà chanh giã tay và các loại đồ uống thanh nhiệt.</p>
+            <a href="blog.html" class="btn btn-sm">Đọc Bài Viết ➔</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHÂN TRANG ĐẲNG CẤP (FOOTER) -->
+  <footer>
+    <div class="container">
+      <p><strong>🌶️ TIỆM ĂN VẶT CAY CAY - ĐỒ ĂN VẶT NỘI ĐỊA TRUNG QUỐC</strong></p>
+      <div class="footer-nav">
+        <a href="index.html">Trang Chủ</a> |
+        <a href="about.html">Giới Thiệu</a> |
+        <a href="products.html">Thực Đơn</a> |
+        <a href="services.html">Dịch Vụ</a> |
+        <a href="gallery.html">Hình Ảnh</a> |
+        <a href="blog.html">Cẩm Nang</a> |
+        <a href="details.html">Chi Tiết Món</a> |
+        <a href="contact.html">Liên Hệ</a>
+      </div>
+      <p>Địa chỉ: 123 Đường Cầu Giấy, Hà Nội | Hotline: 0123 456 789 | Giờ mở cửa: 08:00 - 22:30</p>
+      <p class="footer-credit">
+        Hình ảnh minh họa chất lượng cao cung cấp bởi <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>. &copy; 2026 Cay Cay Quán. Sinh viên: Quan Khoa Cát Tường (MSSV: 2531540215).
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
